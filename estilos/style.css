@@ -60,3 +60,67 @@
         transform: translateX(calc(-100% - var(--gap)));
     }
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: .3rem .8rem;
+    border: 1px solid;
+}
+
+.menu-icon button {
+    padding: .35rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.login button {
+    width: 70px;
+    padding: .3rem;
+    font-size: .9rem;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+main {
+    position: relative;
+    background-color: #ff00002d;
+}
+
+.side-menu {
+    position: absolute;
+    left: -15rem;
+    width: 15rem;
+    height: 100dvh;
+    overflow: hidden;
+    border: 1px solid;
+    z-index: 10;
+    background-color: #fff;
+    transition: left .5s ease;
+}
+
+.side-menu ul {
+    list-style: none;
+    margin: 2.5rem 1rem;
+}
+
+.side-menu h2 {
+    padding: 5px 0;
+}
+
+.side-menu li {
+    padding: 5px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #000;
+}

@@ -9,20 +9,22 @@
 </head>
 <body>
 
+    <div id="overlay"></div>
+
     <div class="ticker" aria-hidden="true">
         <ul>
-            <li><a href="#">BRAND 1</a></li>
-            <li><a href="#">BRAND 2</a></li>
-            <li><a href="#">BRAND 3</a></li>
-            <li><a href="#">BRAND 4</a></li>
-            <li><a href="#">BRAND 5</a></li>
+            <li><a href="paginas/aurora.html" target="_self">AURORA URBANA</a></li>
+            <li><a href="paginas/folkstudio.html" target="_self">FOLKSTUDIO</a></li>
+            <li><a href="paginas/rave.html" target="_self">RAV3</a></li>
+            <li><a href="paginas/luna.html" target="_self">LUNA & MAR</a></li>
+            <li><a href="paginas/essenza.html" target="_self">ESSENZA</a></li>
         </ul>
         <ul>
-            <li><a href="#">BRAND 1</a></li>
-            <li><a href="#">BRAND 2</a></li>
-            <li><a href="#">BRAND 3</a></li>
-            <li><a href="#">BRAND 4</a></li>
-            <li><a href="#">BRAND 5</a></li>
+            <li><a href="paginas/aurora.html" target="_self">AURORA URBANA</a></li>
+            <li><a href="paginas/folkstudio.html" target="_self">FOLKSTUDIO</a></li>
+            <li><a href="paginas/rave.html" target="_self">RAV3</a></li>
+            <li><a href="paginas/luna.html" target="_self">LUNA & MAR</a></li>
+            <li><a href="paginas/essenza.html" target="_self">ESSENZA</a></li>
         </ul>
     </div>
 
@@ -37,7 +39,7 @@
         </div>
 
         <div class="login">
-            <button>LOGIN</button>
+            <button onclick="openLogin()">LOGIN</button>
         </div>
     </header>
 
@@ -52,20 +54,46 @@
                 <li><a href="#">MASCULINO</a></li>
                 <li><a href="#">FEMININO</a></li>
                 <li><a href="#">INFANTIL</a></li>
-                <li><a href="#">MAIS COMPRADOS</a></li>
-                <li><a href="#">LANÇAMENTOS</a></li>
+                <li><a href="#exclusive" target="_self">EXCLUSIVOS</a></li>
+                <li><a href="#our-brands" target="_self">MARCAS</a></li>
             </ul>
         </nav>
     </aside>
 
     <main>
+
+        <div id="login-screen">
+            <button id="exit-btn" onclick="closeLogin()"><i class='bx bx-x'></i></button>
+            
+            <div id="input-form">
+                <h1>LOGIN</h1>
+
+                <form action="">
+                    <input type="email" required placeholder="EMAIL">
+                    <input type="password" required placeholder="SENHA">
+                </form>
+
+                <div id="input-btn">
+                    <button type="submit">ENTRAR</button>
+                </div>
+
+                <p>ou entre usando uma das plataformas</p>
+                <div id="social-media">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                </div>
+            </div>
+        </div>
+
         <section class="hero">
             <h1>PLACEHOLDER</h1>   
             
             <button>PLACEHOLDER</button>
         </section>
 
-        <section class="exclusive">
+        <section id="exclusive">
             <h2>EXCLUSIVOS</h2>
 
             <div class="exclusive-box">
@@ -167,7 +195,7 @@
             </div>
         </section>
 
-        <section class="our-brands">
+        <section id="our-brands">
             <h2>MARCAS</h2>
 
             <div class="hero-brand">
@@ -233,11 +261,6 @@
 
                 <button>SAIBA MAIS</button>
             </div>
-        </section>
-
-        <section>
-            img
-            <img src="" alt="">
         </section>
     </main>
 

@@ -20,6 +20,8 @@
     --p--font: "Roboto Mono", monospace, arial, sans-serif;
     --gap: 45px;
     --transition-time: .3s ease;
+    --cor1: #000;
+    --cor2: #fff;
 }
 
 body {
@@ -42,7 +44,7 @@ body p {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 999;
     background-color: #00000099;
     backdrop-filter: blur(3px);
 }
@@ -55,7 +57,7 @@ body p {
     user-select: none;
     overflow: hidden;
     border: 1px solid;
-    background-color: #000;
+    background-color: var(--cor1);
 }
 
 .ticker ul {
@@ -81,7 +83,7 @@ body p {
 }
 
 .ticker ul a:hover {
-    color: #fff;
+    color: var(--cor2);
 }
 
 @keyframes scroll {
@@ -99,8 +101,7 @@ header {
     height: 60px;
     padding: .3rem .8rem;
     z-index: 99;
-    border: 1px solid;
-    background: #fff;
+    background: var(--cor2);
 }
 
 .menu-icon button {
@@ -125,8 +126,8 @@ header {
 }
 
 .login button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--cor1);
+    color: var(--cor2);
 }
 
 .login button:active {
@@ -135,13 +136,14 @@ header {
 
 .side-menu {
     position: absolute;
-    left: -15rem;
-    width: 15rem;
+    top: 0;
+    left: -19rem;
+    width: 19rem;
     height: 100%;
     overflow: hidden;
     border: 1px solid;
-    z-index: 10;
-    background-color: #fff;
+    z-index: 999;
+    background-color: var(--cor2);
     transition: left .5s ease;
 }
 
@@ -164,7 +166,7 @@ header {
 
 .side-menu a {
     text-decoration: none;
-    color: #000;
+    color: var(--cor1);
 }
 
 .side-menu a:hover {
@@ -178,8 +180,8 @@ main h2 {
     font-size: 20vw;
     font-weight: normal;
     text-align: center;
-    color: #fff;
-    background-color: #000;
+    color: var(--cor2);
+    background-color: var(--cor1);
 }
 
 #login-screen {
@@ -191,7 +193,7 @@ main h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: #fff;
+    background-color: var(--cor2);
 }
 
 #login-screen h1, p {
@@ -244,8 +246,8 @@ main h2 {
 }
 
 #input-btn button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--cor1);
+    color: var(--cor2);
 }
 
 #social-media {
@@ -258,7 +260,7 @@ main h2 {
     margin-inline: .2rem;
     font-size: 1.5rem;
     border: 1px solid;
-    color: #000;
+    color: var(--cor1);
 }
 
 .hero {
@@ -267,7 +269,7 @@ main h2 {
     justify-content: center;
     align-items: center;
     height: 100dvh;
-    background: #000 url(../imagens/hero-back.jpg) no-repeat;
+    background: var(--cor1) url(../imagens/hero-back.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -280,15 +282,15 @@ main h2 {
     font-size: 5rem;
     font-weight: normal;
     text-shadow: 2px 3px 5px #0000007a;
-    color: #fff;
+    color: var(--cor2);
 }
 
 .hero button {
     padding: 10px 15px;
     font-size: 1rem;
     font-weight: 500;
-    color: #fff;
-    border: 2px solid #fff;
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
     outline: none;
     cursor: pointer;
     background-color: transparent;
@@ -296,12 +298,12 @@ main h2 {
 }
 
 .hero button:hover {
-    background-color: #ffffff;
-    color: #000;
+    background-color: var(--cor2);
+    color: var(--cor1);
 }
 
 #exclusive {
-    background-color: #000;
+    background-color: var(--cor1);
 }
 
 .exclusive-box {
@@ -317,8 +319,7 @@ main h2 {
     padding: 20px 10px;
     margin: .5rem;
     text-align: center;
-    border: 1px solid;
-    background-color: #fff;
+    background-color: var(--cor2);
 }
 
 .exclusive-box .item img {
@@ -341,7 +342,7 @@ main h2 {
 
 #exclusive .item a {
     text-decoration: none;
-    color: #000;
+    color: var(--cor1);
 }
 
 #exclusive .item button {
@@ -354,7 +355,7 @@ main h2 {
 
 .hero-brand {
     height: 100dvh;
-    background: #000 url(../imagens/hero-back2.jpg) no-repeat;
+    background: var(--cor1) url(../imagens/hero-back2.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -363,7 +364,7 @@ main h2 {
     margin-block: 10px;
     padding: 10px;
     border: 1px solid;
-    background-color: #fff;
+    background-color: var(--cor2);
 }
 
 .brand img {
@@ -388,12 +389,10 @@ main h2 {
 }
 
 footer {
-    position: absolute;
-    width: 100%;
-    height: 30vh;
+    height: 20vh;
     text-align: center;
     line-height: 190px;
-    background-color: #000;
+    background-color: var(--cor1);
 }
 
 footer a {
@@ -403,5 +402,5 @@ footer a {
 }
 
 footer a:hover{
-    color: #fff;
+    color: var(--cor2);
 }

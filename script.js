@@ -1,32 +1,38 @@
+const overlay = document.getElementById("overlay")
 const menu = document.querySelector(".side-menu")
-const overlay = document.querySelector("#overlay")
-const loginScreen = document.getElementById("login-screen")
-const exitbtn = document.getElementById("exit-btn")
+const login = document.getElementById("login-screen")
+const menuLink = document.querySelector(".link")
 
-function menuToggle() {
-    if (menu.style.left === "-15rem") {
-        menu.style.left = '0'
-    }else {
-        menu.style.left = '-15rem'
-    }
+
+
+menuLink.array.forEach(link => {
+    link.addEventListener("click", () => {
+        closeMenu()
+    })
+});
+
+function openMenu() {
+    login.style.display = "none"
+    menu.style.left = "0"
+    overlay.style.display = "block"
+    document.body.classList.add("no-scroll")
+}
+
+function closeMenu() {
+    menu.style.left = "-19rem"
+    overlay.style.display = "none"
+    document.body.classList.remove("no-scroll")
 }
 
 function openLogin() {
-    if (loginScreen.style.display === "none") {
-        loginScreen.style.display = "block"
-        overlay.style.display = "block"
-        document.body.classList.add("no-scroll")
-    }else {
-        loginScreen.style.display = "none"
-        overlay.style.display = "none"
-        document.body.classList.remove("no-scroll")
-    }
+    menu.style.left = "-19rem"
+    login.style.display = "block"
+    overlay.style.display = "block"
+    document.body.classList.add("no-scroll")
 }
 
 function closeLogin() {
-        if (loginScreen.style.display === "block") {
-        loginScreen.style.display = "none"
-        overlay.style.display = "none"
-        document.body.classList.remove("no-scroll")
-    }
+    login.style.display = "none"
+    overlay.style.display = "none"
+    document.body.classList.remove("no-scroll")
 }

@@ -104,6 +104,12 @@ header {
     background: var(--cor2);
 }
 
+.title h1 {
+    font-family: var(--title-font);
+    font-size: 8vw;
+    font-weight: normal;
+}
+
 .menu-icon button {
     padding: .35rem;
     font-size: 1.5rem;
@@ -171,6 +177,10 @@ header {
 
 .side-menu a:hover {
     text-decoration: underline;
+}
+
+main, #exclusive, .hero-brand {
+    overflow: hidden;
 }
 
 main h2 {
@@ -264,42 +274,9 @@ main h2 {
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100dvh;
     background: var(--cor1) url(../imagens/hero-back.jpg) no-repeat;
     background-size: cover;
-}
-
-.hero img {
-    filter: saturate(50%);
-}
-
-.hero h1 {
-    font-family: var(--title-font);
-    font-size: 5rem;
-    font-weight: normal;
-    text-shadow: 2px 3px 5px #0000007a;
-    color: var(--cor2);
-}
-
-.hero button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--cor2);
-    border: 2px solid var(--cor2);
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-    transition: var(--transition-time);
-}
-
-.hero button:hover {
-    background-color: var(--cor2);
-    color: var(--cor1);
 }
 
 #exclusive {
@@ -317,13 +294,13 @@ main h2 {
     position: relative;
     height: 400px;
     padding: 20px 10px;
-    margin: .5rem;
+
     text-align: center;
     background-color: var(--cor2);
 }
 
 .exclusive-box .item img {
-    width: 200px;
+    width: 90%;
     height: 280px;
 }
 
@@ -389,7 +366,6 @@ main h2 {
 }
 
 footer {
-    height: 20vh;
     text-align: center;
     line-height: 190px;
     background-color: var(--cor1);

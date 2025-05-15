@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --sign-font: "Pixelify Sans", arial, sans-serif;
+    --link-font: "Titillium Web", arial, sans-serif;
+    --title-font: "Anton", arial, sans-serif;
+    --p--font: "Roboto Mono", monospace, arial, sans-serif;
+    --gap: 45px;
+    --transition-time: .3s ease;
+    --cor1: #000;
+    --cor2: #fff;
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .ticker {
+        gap: 5rem;
+    }
+
+    .ticker ul a {
+        font-size: 1.2rem;
+    }
+    
+    .title h1 {
+        font-size: 2.9rem;
+    }
+
+    .hero {
+        background: #000 url(../imagens/hero-desk.png);
+    }
+
+    .exclusive-box .item img {
+        width: 60%;
+    }
+
+    .brand {
+        width: 60%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px){
+    .ticker {
+        gap: 12rem;
+    }
+
+    .ticker ul {
+        gap: 0.9rem;
+    }
+
+    .ticker ul a {
+        font-size: 1.2rem;
+        margin-inline: 0;
+    }
+
+    header {
+        justify-content: space-around;
+        border-bottom: 1px solid;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .login button {
+        font-size: 1.2rem;
+        width: 9rem;
+    }
+    
+    .menu-nav {
+        display: block;
+    }
+
+    .menu-nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .menu-nav li {
+        padding-inline: 1rem;
+    }
+
+    .menu-nav a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--cor1);
+        transition: var(--transition-time);
+    }
+
+    .menu-nav a:hover {
+        color: #888;
+    }
+
+    main h2 {
+        font-size: 15vw;
+    }
+
+    .hero {
+        background: #000 url(../imagens/hero-desk.png);
+    }
+
+    .exclusive-box {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .exclusive-box .item {
+        border: 1px solid;
+    }
+
+    .exclusive-box .item img {
+        width: 70%;
+    }
+
+    .exclusive-box .item p {
+        font-size: 1.1rem;
+    }
+
+    .brand {
+        width: 50%;
+    }
+
+    .brand h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .brand p {
+        font-size: 1.1rem;
+    }
+
+    .brand button {
+        text-align: center;
+    }
+}

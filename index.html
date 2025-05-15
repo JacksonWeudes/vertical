@@ -6,6 +6,7 @@
     <title>VERTICAL</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
 </head>
 <body>
 
@@ -38,25 +39,32 @@
             <h1>VERTICAL</h1>
         </div>
 
+        <nav class="menu-nav">
+            <ul>
+                <li><a href=".hero" class="link" target="_self">HOME</a></li>
+                <li><a href="#" class="link">SOBRE</a></li>
+                <li><a href="#contact" class="link" target="_self">CONTATO</a></li>
+                <li><a href="#exclusive" target="_self" class="link">EXCLUSIVOS</a></li>
+                <li><a href="#our-brands" target="_self" class="link">MARCAS</a></li>
+            </ul>
+        </nav>
+
         <div class="login">
             <button onclick="openLogin()">LOGIN</button>
         </div>
     </header>
 
+ 
     <aside class="side-menu">
         <nav>
             <button id="exit-btn" onclick="closeMenu()">
                 <i class='bx bx-x'></i>
             </button>
             <ul>
-                <li><a href="#" class="link">HOME</a></li>
-                <li><a href="#" class="link">LOJAS</a></li>
+                <li><a href=".hero" class="link" target="_self">HOME</a></li>
                 <li><a href="#" class="link">SOBRE</a></li>
-                <li><a href="#" class="link">CONATO</a></li>
+                <li><a href="#contact" class="link" target="_self">CONTATO</a></li>
                 <h2>CATEGORIAS</h2>
-                <li><a href="#" class="link">MASCULINO</a></li>
-                <li><a href="#" class="link">FEMININO</a></li>
-                <li><a href="#" class="link">INFANTIL</a></li>
                 <li><a href="#exclusive" target="_self" class="link">EXCLUSIVOS</a></li>
                 <li><a href="#our-brands" target="_self" class="link">MARCAS</a></li>
             </ul>
@@ -263,8 +271,8 @@
         </section>
     </main>
 
-    <footer>
-        <a href="#">@Jackson Weudes Alves</a>
+    <footer id="contact">
+        <a href="https://github.com/JacksonWeudes" target="_blank">GITHUB</a>
     </footer>
 
     <script src="script.js"></script>

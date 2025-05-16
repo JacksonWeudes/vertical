@@ -1,37 +1,29 @@
 const overlay = document.getElementById("overlay")
 const menu = document.querySelector(".side-menu")
 const login = document.getElementById("login-screen")
-const menuLink = document.querySelector(".link")
+const links = document.querySelectorAll(".link")
 
-
-
-menuLink.array.forEach(link => {
-    link.addEventListener("click", () => {
-        closeMenu()
-    })
-});
-
-function openMenu() {
+function openMenu(){
     login.style.display = "none"
     menu.style.left = "0"
     overlay.style.display = "block"
     document.body.classList.add("no-scroll")
 }
 
-function closeMenu() {
+function closeMenu(){
     menu.style.left = "-19rem"
     overlay.style.display = "none"
     document.body.classList.remove("no-scroll")
 }
 
-function openLogin() {
+function openLogin(){
     menu.style.left = "-19rem"
     login.style.display = "block"
     overlay.style.display = "block"
     document.body.classList.add("no-scroll")
 }
 
-function closeLogin() {
+function closeLogin(){
     login.style.display = "none"
     overlay.style.display = "none"
     document.body.classList.remove("no-scroll")

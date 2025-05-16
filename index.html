@@ -41,7 +41,7 @@
 
         <nav class="menu-nav">
             <ul>
-                <li><a href=".hero" class="link" target="_self">HOME</a></li>
+                <li><a href="#home" class="link" target="_self">HOME</a></li>
                 <li><a href="#" class="link">SOBRE</a></li>
                 <li><a href="#contact" class="link" target="_self">CONTATO</a></li>
                 <li><a href="#exclusive" target="_self" class="link">EXCLUSIVOS</a></li>
@@ -61,12 +61,12 @@
                 <i class='bx bx-x'></i>
             </button>
             <ul>
-                <li><a href=".hero" class="link" target="_self">HOME</a></li>
-                <li><a href="#" class="link">SOBRE</a></li>
-                <li><a href="#contact" class="link" target="_self">CONTATO</a></li>
+                <li><a href="#home" target="_self" onclick="closeMenu()">HOME</a></li>
+                <li><a href="#" onclick="closeMenu()">SOBRE</a></li>
+                <li><a href="#contact" target="_self" onclick="closeMenu()">CONTATO</a></li>
                 <h2>CATEGORIAS</h2>
-                <li><a href="#exclusive" target="_self" class="link">EXCLUSIVOS</a></li>
-                <li><a href="#our-brands" target="_self" class="link">MARCAS</a></li>
+                <li><a href="#exclusive" target="_self" onclick="closeMenu()">EXCLUSIVOS</a></li>
+                <li><a href="#our-brands" target="_self" onclick="closeMenu()">MARCAS</a></li>
             </ul>
         </nav>
     </aside>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <section class="hero">
+        <section class="hero" id="home">
         </section>
 
         <section id="exclusive">

@@ -25,8 +25,8 @@
         font-size: 2.9rem;
     }
 
-    .hero {
-        background: #000 url(../imagens/hero-desk.png);
+    #login-screen {
+        width: 50%;
     }
 
     .exclusive-box .item img {
@@ -101,8 +101,13 @@
         font-size: 15vw;
     }
 
+    #login-screen {
+        width: 30%;
+    }
+
     .hero {
-        background: #000 url(../imagens/hero-desk.png);
+        background: #000 url(../imagens/desk-hero.jpg);
+        background-position: top center;
     }
 
     .exclusive-box {

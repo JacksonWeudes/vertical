@@ -278,7 +278,7 @@ main h2 {
 
 .hero {
     height: 100dvh;
-    background: var(--cor1) url(../imagens/hero-back.jpg) no-repeat;
+    background: var(--cor1) url(../imagens/mobile-hero.jpg) no-repeat;
     background-size: cover;
 }
 
